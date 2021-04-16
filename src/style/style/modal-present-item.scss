@@ -1,0 +1,74 @@
+.modal {
+  font-family: 'Montserrat', sans-serif;
+
+  & .modal-dialog {
+    & .modal-content {
+      margin-top: 100px;
+
+      & .modal-body {
+
+        & .modal-title {
+          color: #004988;
+          font-weight: bold;
+          font-size: 50px;
+          line-height: 1;
+
+          & .modal-subtitle {
+            color: black;
+            font-weight: normal;
+            font-size: 20px;
+          }
+        }
+
+        & .modal-info-present {
+          display: flex;
+          justify-content: center;
+
+          & .info-present-text {
+            padding: 40px 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 500;
+          }
+
+          & .present-img img {
+            width: 100px;
+            height: 100px;
+          }
+        }
+        & form {
+          & .form-group {
+
+          }
+        }
+
+        & .timer-container-count {
+          height: 100px;
+          margin: 0 auto;
+          margin-bottom: 20px;
+
+          &-title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 500;
+          }
+
+          & .countdown-week {
+            & .lightcountdown__item {
+              & .lightcountdown__digits {
+                & .lightcountdown__digit {
+                  background-color: #004988;
+                  color: #f6f305;
+                }
+              }
+
+              & .lightcountdown__text {
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

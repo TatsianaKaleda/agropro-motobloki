@@ -1,0 +1,234 @@
+.how {
+  background: url("../../assets/img/att_bg.jpg") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  font-family: 'Montserrat', sans-serif;
+
+  &-container {
+    margin: 0 auto;
+    padding: 10px;
+
+    &-title {
+      font-size: 50px;
+      font-weight: 500;
+      padding: 40px 0;
+      text-align: center;
+      letter-spacing: -0.5px;
+      color: #004988;
+
+      &-icon {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        margin: 0 15px 0 0;
+        vertical-align: top;
+        position: relative;
+        background: url("../../assets/img/Why_icons.png") no-repeat;
+        background-position: -316px 0;
+      }
+    }
+
+    &-content {
+      position: relative;
+
+      &-step-item {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+        width: 360px;
+
+        @media(max-width: 1199px) {
+          width: 300px;
+        }
+
+        @media(max-width: 1110px) {
+          width: 270px;
+        }
+
+        @media(max-width: 350px) {
+          margin-left: 0;
+          width: 240px;
+        }
+
+
+        & .step-counter {
+          margin-right: 20px;
+          font-size: 128px;
+
+          @media(max-width: 1110px) {
+            font-size: 86px;
+          }
+
+          @media(max-width: 350px) {
+            font-size: 65px;
+          }
+        }
+
+        & .step-info {
+
+          &-title {
+            padding: 0 0 10px;
+            font-size: 24px;
+            font-weight: 500;
+
+            @media(max-width: 1110px) {
+              font-size: 20px;
+            }
+          }
+
+          &-text {
+            font-size: 18px;
+            font-weight: 400;
+
+            @media(max-width: 1110px) {
+              font-size: 14px;
+            }
+          }
+        }
+
+        & .how-button {
+          margin: 20px;
+          background: #f62222;
+          border: 2px solid #d12020;
+          color: #fff;
+          text-shadow: none;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          padding: 20px 50px 15px;
+          font-weight: 500;
+          text-decoration: none;
+          border-radius: 43px;
+
+          &:hover {
+            background: transparent;
+            border-color: #004988;
+            box-shadow: inset 0 0 0 3px #004988;
+            color: #004988;
+          }
+        }
+        & .how-button {
+          @media (max-width: 1100px) {
+            margin: 15px;
+            padding: 20px 43px 15px;
+            font-size: 13px;
+          }
+        }
+      }
+
+      & .i-3 {
+        margin-top: 150px;
+        margin-bottom: 50px;
+
+        @media(max-width: 991px) {
+          margin: 20px;
+        }
+
+        @media(max-width: 350px) {
+          margin-left: 0;
+        }
+      }
+
+      & .i-5 {
+        margin-top: 100px;
+        margin-bottom: 50px;
+
+        @media(max-width: 991px) {
+          margin: 20px;
+        }
+
+        @media(max-width: 350px) {
+          margin-left: 0;
+        }
+      }
+
+      & .how-arrow-1 {
+        width: 160px;
+        position: absolute;
+        transform: scaleY(-1);
+        top: -5%;
+        left: 41%;
+
+        @media(max-width: 1570px) {
+          left: 37%;
+        }
+
+        @media(max-width: 1100px) {
+          left: 33%;
+        }
+
+        @media(max-width: 991px) {
+          display: none;
+        }
+      }
+
+      & .how-arrow-2 {
+        width: 160px;
+        position: absolute;
+        transform: scaleY(-1);
+        top: 2%;
+        left: 61%;
+
+        @media(max-width: 991px) {
+          display: none;
+        }
+      }
+
+      & .how-arrow-3 {
+        width: 237px;
+        position: absolute;
+        top: 33%;
+        left: 46%;
+        transform: rotate(19deg);
+
+        @media(max-width: 1199px) {
+          top: 32%;
+        }
+
+        @media(max-width: 1110px) {
+          top: 28%;
+        }
+
+        @media(max-width: 991px) {
+          display: none;
+        }
+      }
+
+      & .how-arrow-4 {
+        width: 160px;
+        position: absolute;
+        top: 52%;
+        left: 40%;
+        transform: scaleY(-1) rotate(-22deg);
+
+        @media(max-width: 1570px) {
+          left: 37%;
+        }
+
+        @media(max-width: 1110px) {
+          left: 33%;
+        }
+
+        @media(max-width: 991px) {
+          display: none;
+        }
+      }
+
+      & .how-arrow-5 {
+        width: 160px;
+        position: absolute;
+        top: 68%;
+        left: 60%;
+        transform: scaleY(1) rotate(-38deg);
+
+        @media(max-width: 1700px) {
+          left: 65%;
+        }
+
+        @media(max-width: 991px) {
+          display: none;
+        }
+      }
+    }
+  }
+}

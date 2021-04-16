@@ -1,0 +1,41 @@
+.certificates {
+  &-container {
+    margin: 0 auto 40px;
+    padding: 15px;
+
+    &-title {
+      margin-top:30px;
+      margin-bottom: 40px;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 50px;
+      font-weight: 500;
+      text-align: center;
+
+      @media(max-width: 410px) {
+        font-size: 40px;
+      }
+    }
+    & img {
+      width: 500px;
+      height: 700px;
+
+      @media(max-width: 1200px) {
+        margin-right: 20px;
+        width: 400px;
+        height: 600px;
+      }
+
+      @media(max-width: 991px) {
+        margin-right: 20px;
+        width: 300px;
+        height: 500px;
+      }
+
+      @media(max-width: 360px) {
+        margin: 0 50%;
+        width: 200px;
+        height: 400px;
+      }
+    }
+  }
+}

@@ -1,0 +1,108 @@
+.free {
+  height: 100%;
+  background: url("../../assets/img/free_bg.jpg") center no-repeat;
+  background-size: cover;
+  padding: 30px 15px 0;
+  font-family: 'Montserrat', sans-serif;
+
+  &-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    @media(max-width: 940px) {
+      flex-wrap: wrap;
+    }
+
+    &-title {
+      margin-right: 30px;
+      width: 423px;
+      background: url("../../assets/img/free_title_bg.png") center no-repeat;
+      background-size: contain;
+      color: white;
+      font-size: 48px;
+      font-weight: 500;
+      text-align: center;
+
+
+      @media(max-width: 940px) {
+        margin-bottom: 20px;
+      }
+
+      @media(max-width: 350px) {
+        font-size: 38px;
+      }
+    }
+
+    &-content {
+      display: flex;
+      justify-content: center;
+
+      @media(max-width: 550px) {
+        flex-wrap: wrap;
+      }
+
+      &-info {
+        margin-right: 30px;
+        width: 182px;
+        text-align: left;
+
+        &-title {
+          font-weight: 500;
+          font-size: 24px;
+          color: #fff;
+        }
+
+        &-subtitle {
+          height: 88px;
+          background: url("../../assets/img/free_title_bg.png") no-repeat center;
+          background-size: contain;
+          font-weight: 500;
+          font-style: italic;
+          font-size: 14px;
+          color: #fff;
+        }
+      }
+
+      &-form {
+
+        & input {
+          width: 300px;
+          margin: 10px 0;
+          display: block;
+          font-size: 16px;
+          background: #fff;
+          border: none;
+          padding: 6px 15px;
+          color: #1e1a17;
+          box-shadow: 0 -1px 0 rgba(0,0,0,.3);
+          border-radius: 43px;
+        }
+
+        & .free-form-submit {
+          cursor: pointer;
+          border: none;
+          margin: 10px 0;
+          padding: 7px 0 6px;
+          width: 300px;
+          background: #ffbf00;
+          border-bottom: 5px solid #de8e12;
+          color: #202020;
+          font-size: 18px;
+          font-weight: 500;
+          text-shadow: 0 1px 0 rgba(255,255,255,.4);
+          letter-spacing: -0.5px;
+        }
+
+        & .form-race {
+          padding: 10px 0 0;
+          text-align: center;
+          color: #fff;
+          font-size: 18px;
+          font-weight: 500;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}

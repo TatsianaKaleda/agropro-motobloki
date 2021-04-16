@@ -1,0 +1,211 @@
+.look {
+  position: relative;
+  width: 100%;
+  margin-bottom: 100px;
+  font-family: 'Montserrat', sans-serif;
+
+  @media(max-width: 498px) {
+    margin-bottom: 50px;
+  }
+
+  &-bg1 {
+    position: absolute;
+    background: url("../../assets/img/look_bg.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  &-bg2 {
+    position: absolute;
+    background: url("../../assets/img/look_img.webp") no-repeat left;
+    background-size: auto;
+    left: 14%;
+    top: 41%;
+    width: 100%;
+    height: 100%;
+
+    @media(max-width: 1525px) {
+      left: 3%;
+    }
+
+    @media(max-width: 800px) {
+      background-size: 60%;
+      left: -3%;
+    }
+
+    @media(max-width: 470px) {
+      background-size: 68%;
+    }
+  }
+
+  &-container {
+    margin: 0 auto;
+    position: relative;
+    padding-left: 15px;
+    padding-right: 15px;
+    z-index: 1;
+
+    &-title,
+    &-subtitle {
+      text-align: left;
+      padding-left: 80px;
+      color: #000000;
+      line-height: 1.55;
+
+      @media(max-width: 1149px) {
+        padding-left: 0;
+      }
+    }
+
+    &-title {
+      padding-top: 13%;
+      font-size: 50px;
+      font-weight: 500;
+
+      @media(max-width: 1540px) {
+        font-size: 40px;
+      }
+
+      @media(max-width: 1149px) {
+        font-size: 32px;
+      }
+
+      @media(max-width: 1017px) {
+        font-size: 27px;
+      }
+
+      @media(max-width: 566px) {
+        width: auto;
+      }
+    }
+
+    &-subtitle {
+      margin-top: 20px;
+      font-size: 31px;
+      font-weight: 300;
+      width: auto;
+
+      @media(max-width: 1540px) {
+        font-size: 24px;
+      }
+
+      @media(max-width: 1149px) {
+        width: 60%;
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+
+      @media(max-width: 780px) {
+        font-size: 19px;
+      }
+
+      @media(max-width: 716px) {
+        width: 86%;
+      }
+
+      @media(max-width: 586px) {
+        margin-bottom: 15px;
+      }
+    }
+
+    &-content {
+      position: relative;
+      padding: 20px 0 100px;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+
+      &-item {
+        margin-top: 55px;
+
+        @media(max-width: 1149px) {
+          margin-top: 0;
+        }
+
+        &-text {
+          margin-bottom: 57px;
+          font-size: 27px;
+          font-weight: 500;
+
+          @media(max-width: 1449px) {
+            margin-bottom: 45px;
+            font-size: 20px;
+          }
+        }
+
+        &-arrow {
+          position: absolute;
+          top: 46%;
+          left: 37%;
+          transform: rotate(45deg);
+
+          @media(max-width: 1149px) {
+            top: 24%;
+          }
+
+          @media(max-width: 1000px) {
+            top: 25%;
+            transform: rotate(33deg);
+          }
+
+          @media(max-width: 991px) {
+            top: 32%;
+            left: 30%;
+          }
+
+          @media(max-width: 767px) {
+            top: 23%;
+            left: 26%;
+          }
+
+          @media(max-width: 486px) {
+            left: 22%;
+            transform: rotate(29deg);
+          }
+
+          @media(max-width: 412px) {
+            left: 16%;
+          }
+
+          @media(max-width: 412px) {
+            left: 10%;
+          }
+        }
+
+        & .youtube-btn-big {
+          background: #004988;
+          border-radius: 50%;
+          border: none;
+          width: 100px;
+          height: 100px;
+          margin: 0 auto;
+          padding: 31px 0 0;
+          animation: beat .8s infinite alternate;
+          transform-origin: center;
+          cursor: pointer;
+
+          @keyframes beat {
+            to {
+              transform: scale(1.4);
+            }
+          }
+
+          @media(max-width: 1000px) {
+            width: 80px;
+            height: 80px;
+            padding: 22px 0 0;
+          }
+
+          @media(max-width: 780px) {
+            width: 60px;
+            height: 60px;
+            padding: 11px 0 0;
+          }
+        }
+      }
+    }
+  }
+}

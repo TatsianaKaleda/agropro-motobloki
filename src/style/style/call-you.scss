@@ -1,0 +1,37 @@
+.call-you {
+  position: fixed;
+  bottom: 30px;
+  right: 37px;
+  width: 100px;
+  height: 100px;
+  border: 2px solid #004988;
+  background: #004988;
+  border-radius: 50%;
+  opacity: 0.6;
+  z-index: 555;
+  padding-top: 20px;
+  text-align: center;
+  animation: beat .8s infinite alternate;
+  transform-origin: center;
+
+  @keyframes beat{
+    to { transform: scale(1.4); }
+  }
+
+  &:hover {
+    opacity: 1;
+    border: 2px solid #ffc107;
+  }
+
+  @media (max-width: 600px) {
+    width: 70px;
+    height: 70px;
+  }
+
+  & svg {
+    @media (max-width: 600px) {
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

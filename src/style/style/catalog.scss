@@ -1,0 +1,180 @@
+.catalog {
+  padding: 15px 15px 50px;
+  font-family: 'Montserrat', sans-serif;
+
+  &-container {
+    margin: 0 auto;
+
+    &-title {
+      font-size: 50px;
+      font-weight: 500;
+      padding: 75px 0;
+      text-align: center;
+      letter-spacing: -0.5px;
+      color: #004988;
+
+      @media(max-width: 450px) {
+        padding: 20px 0;
+        font-size: 30px;
+      }
+    }
+
+    &-content {
+      &-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        & .card {
+          margin-right: 30px;
+
+          @media(max-width: 1289px) {
+            margin-bottom: 20px;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+          & .card-img-top {
+
+          }
+          & .card-body {
+
+            & .card-title {
+              text-align: center;
+              font-size: 22px;
+              font-weight: 700;
+            }
+
+            & .card-text {
+              font-size: 17px;
+              opacity: 0.7;
+            }
+          }
+
+          & .list-group {
+
+            & .list-group-item {
+              font-size: 20px;
+              padding: 10px 0 0 20px;
+              border: none;
+
+              & .svg-row {
+                border-radius: 50%;
+                width: 28px;
+                height: 28px;
+                background: #004988;
+                display: inline-block;
+                text-align: center;
+              }
+            }
+          }
+
+          & .card-price {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+            padding: 0 10px;
+            text-align: center;
+
+            & .card-price-text {
+              text-decoration: line-through;
+              font-weight: 700;
+              font-size: 36px;
+            }
+
+            & .card-price-text-sale {
+              font-family: 'Nosifer', cursive;
+              color: red;
+              font-weight: 700;
+              font-size: 30px;
+              animation: beat .8s infinite alternate;
+              transform-origin: center;
+
+              @keyframes beat{
+                to { transform: scale(1.4); }
+              }
+            }
+          }
+
+          & .card-body {
+
+            & .card-price-btn {
+              margin-bottom: 15px;
+              padding: 12px 15px;
+              border: 3px solid #004988;
+              border-radius: 43px;
+              background: #004988;
+              color: #fff;
+              font-weight: 500;
+              font-size: 18px;
+              box-shadow: 0 0 0 rgba(255,193,7, 0.4);
+              animation: pulse 2s infinite;
+
+              &:focus {
+                outline: none;
+              }
+
+              &:hover {
+                animation: none;
+                border: 3px solid #ffc107;
+                color: #ffc107;
+              }
+              @-webkit-keyframes pulse {
+                0% {
+                  -webkit-box-shadow: 0 0 0 0 rgba(255,193,7, 0.8);
+                }
+                70% {
+                  -webkit-box-shadow: 0 0 0 10px rgba(255,193,7, 0.8);
+                }
+                100% {
+                  -webkit-box-shadow: 0 0 0 0 rgba(255,193,7, 0.8);
+                }
+              }
+              @keyframes pulse {
+                0% {
+                  -moz-box-shadow: 0 0 0 0 rgba(255,193,7, 0.8);
+                  box-shadow: 0 0 0 0 rgba(255,193,7, 0.6);
+                }
+                70% {
+                  -moz-box-shadow: 0 0 0 10px rgba(255,193,7, 0);
+                  box-shadow: 0 0 0 10px rgba(255,193,7, 0);
+                }
+                100% {
+                  -moz-box-shadow: 0 0 0 0 rgba(255,193,7, 0);
+                  box-shadow: 0 0 0 0 rgba(255,193,7, 0);
+                }
+              }
+            }
+
+            & .card-link {
+              margin-left: 0!important;
+              text-align: center;
+              padding: 12px 15px;
+              border: 3px solid #004988;
+              border-radius: 43px;
+              background: #004988;
+              color: #fff;
+              font-weight: 500;
+              font-size: 18px;
+              cursor: pointer;
+
+              &:hover {
+                border: 3px solid #ffc107;
+                color: #ffffff;
+              }
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+
+          &:hover {
+            box-shadow: 0 0 28px rgba(0,73,136,0.5);
+            transition: box-shadow 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}

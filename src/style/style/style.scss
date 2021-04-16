@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,800;1,700&display=swap');
+@import "node_modules/reset-css/sass/reset.scss";
+@import "header.scss";
+@import "main.scss";
+@import "sale.scss";
+@import "choice.scss";
+@import "look.scss";
+@import "advantages.scss";
+@import "catalog.scss";
+@import "attachments.scss";
+@import "certificates.scss";
+@import "why.scss";
+@import "how.scss";
+@import "free.scss";
+@import "contact.scss";
+@import "reviews.scss";
+@import "call-you.scss";
+@import "modal-order.scss";
+@import "presentModal.scss";
+@import "modal-present-item.scss";
+
+
+body {
+  overflow-x: hidden;
+  margin-bottom: 50px;
+}
